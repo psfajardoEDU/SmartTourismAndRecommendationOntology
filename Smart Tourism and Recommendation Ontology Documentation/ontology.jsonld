@@ -1,0 +1,927 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction"
+    }, {
+      "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event"
+    }, {
+      "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel"
+    }, {
+      "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid28"
+    }, {
+      "@id" : "_:genid24"
+    }, {
+      "@id" : "_:genid22"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid30"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#s"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City"
+    }, {
+      "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid39"
+    }, {
+      "@id" : "_:genid37"
+    }, {
+      "@id" : "_:genid33"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid41"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#c"
+    }, {
+      "@value" : "Taxi"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#equal"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid48"
+    }, {
+      "@id" : "_:genid46"
+    }, {
+      "@id" : "_:genid44"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid52"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#n"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#n"
+    }, {
+      "@value" : "Congreso"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#contains"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City"
+    }, {
+      "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel"
+    }, {
+      "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant"
+    }, {
+      "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology makes it possible to identify user trends and preferences in relation to tourism in different cities arround the world"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Smart Tourism and Recommendation Ontology"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/AsianRestaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Asian food is served"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AsianRestaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Structures or places that belong to the city and symbolize it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId" : [ {
+    "@value" : "Barcelona"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation" : [ {
+    "@value" : "42.3874,2.1686"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Instance of class City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Barcelona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://es.dbpedia.org/page/Barcelona"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BoutiqueHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Pleasant and privileged location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BoutiqueHotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BudgetHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Basic services and competitive prices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BudgetHotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Geographical area of tourist interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Places of exhibition of works or history"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CulturalAttraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Culture related event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CulturalEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event marked on the calendar with the objective to entertain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Place to rest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://es.dbpedia.org/page/Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "9"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName" : [ {
+    "@value" : "Hotel Royal Barcelona"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.0"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.252"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType" : [ {
+    "@value" : "Playa"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Instance of class Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HotelRoyalBarcelona"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Latin American food is served"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LatinAmericanRestaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Services and facilities with all kinds of luxuries"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LuxuryHotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId" : [ {
+    "@value" : "Madrid"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation" : [ {
+    "@value" : "40.4168,-3.7038"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Instance of class City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Madrid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MediterraneanRestaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mediterranean food is served"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MediterraneanRestaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MusicEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Music related event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MusicEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NaturalAttraction"
+  }, {
+    "@value" : "Places found in nature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "43"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName" : [ {
+    "@value" : "Parque Barcelona"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.9"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType" : [ {
+    "@value" : "Parque"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Instance of class Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ParqueBarcelona"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Private and individual transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PrivateTransport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Public and shared transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PublicTransport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RecreationalAttraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Structures belonging to the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RecreationalAttraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Place to eat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "21"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName" : [ {
+    "@value" : "Restaurante Delicia Madrid"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "16"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.7"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType" : [ {
+    "@value" : "Mexicana"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Instance of class Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RestauranteDeliciaMadrid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/SportsEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sport related event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SportsEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TechEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Technology related event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TechEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Group all tourism assets"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TouristAsset"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mobility in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany" : [ {
+    "@value" : "Trans Valencia"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "11"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "9.05"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType" : [ {
+    "@value" : "Tranvia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Instance of class Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TranviaValencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://es.dbpedia.org/page/Ferrocarrils_de_la_Generalitat_Valenciana"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId" : [ {
+    "@value" : "Valencia"
+  } ],
+  "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation" : [ {
+    "@value" : "39.4699,-0.3763"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Instance of class City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Valencia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates each tourism asset to a city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the transport company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the date of the event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the ID of the city or the tourist asset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the coordinates of the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasLocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the name of the city or the tourist asset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the price of the hotel, restaurant or transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPrice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the rating of the attraction, event, hotel or restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the stars of the hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasStars"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the type of the tourist asset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tourist assets that are close to others"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isClosedTo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#contains",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#equal",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "urn:swrl:var#c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#e",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#h",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#n",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#s",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#t",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

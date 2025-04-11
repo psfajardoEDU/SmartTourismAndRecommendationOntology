@@ -1,0 +1,521 @@
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology makes it possible to identify user trends and preferences in relation to tourism in different cities arround the world" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology> <http://www.w3.org/2000/01/rdf-schema#label> "Smart Tourism and Recommendation Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates each tourism asset to a city" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.w3.org/2000/01/rdf-schema#label> "hasCity" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> <http://www.w3.org/2000/01/rdf-schema#range> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Tourist assets that are close to others" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> <http://www.w3.org/2000/01/rdf-schema#label> "isClosedTo" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the transport company" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany> <http://www.w3.org/2000/01/rdf-schema#label> "hasCompany" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasDate
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the date of the event" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasDate" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the ID of the city or the tourist asset" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> <http://www.w3.org/2000/01/rdf-schema#label> "hasId" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the coordinates of the city" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "hasLocation" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the name of the city or the tourist asset" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> <http://www.w3.org/2000/01/rdf-schema#label> "hasName" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the price of the hotel, restaurant or transport" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice> <http://www.w3.org/2000/01/rdf-schema#label> "hasPrice" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating of the attraction, event, hotel or restaurant" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "hasRating" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the stars of the hotel" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars> <http://www.w3.org/2000/01/rdf-schema#label> "hasStars" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type of the tourist asset" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> <http://www.w3.org/2000/01/rdf-schema#label> "hasType" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/AsianRestaurant
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/AsianRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/AsianRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/AsianRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Asian food is served" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/AsianRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "AsianRestaurant" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Structures or places that belong to the city and symbolize it" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BoutiqueHotel
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BoutiqueHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BoutiqueHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BoutiqueHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Pleasant and privileged location" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BoutiqueHotel> <http://www.w3.org/2000/01/rdf-schema#label> "BoutiqueHotel" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BudgetHotel
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BudgetHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BudgetHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BudgetHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Basic services and competitive prices" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BudgetHotel> <http://www.w3.org/2000/01/rdf-schema#label> "BudgetHotel" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographical area of tourist interest" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Places of exhibition of works or history" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "CulturalAttraction" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalEvent
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Culture related event" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#label> "CulturalEvent" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Event marked on the calendar with the objective to entertain" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Place to rest" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://es.dbpedia.org/page/Hotel" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Latin American food is served" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "LatinAmericanRestaurant" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Services and facilities with all kinds of luxuries" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#label> "LuxuryHotel" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MediterraneanRestaurant
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MediterraneanRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MediterraneanRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MediterraneanRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Mediterranean food is served" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MediterraneanRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "MediterraneanRestaurant" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MusicEvent
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MusicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MusicEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MusicEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Music related event" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MusicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "MusicEvent" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "NaturalAttraction" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "Places found in nature" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Private and individual transport" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport> <http://www.w3.org/2000/01/rdf-schema#label> "PrivateTransport" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Public and shared transport" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport> <http://www.w3.org/2000/01/rdf-schema#label> "PublicTransport" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RecreationalAttraction
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RecreationalAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RecreationalAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RecreationalAttraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Structures belonging to the city" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RecreationalAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "RecreationalAttraction" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Place to eat" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/SportsEvent
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/SportsEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/SportsEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/SportsEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Sport related event" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/SportsEvent> <http://www.w3.org/2000/01/rdf-schema#label> "SportsEvent" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TechEvent
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TechEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TechEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TechEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Technology related event" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TechEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TechEvent" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> .
+_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> <http://www.w3.org/2000/01/rdf-schema#comment> "Group all tourism assets" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> <http://www.w3.org/2000/01/rdf-schema#label> "TouristAsset" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Mobility in the city" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> "Barcelona" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> "42.3874,2.1686" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of class City" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Barcelona" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://es.dbpedia.org/page/Barcelona" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> "Hotel Royal Barcelona" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> "4.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars> "4.252"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> "Playa" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of class Hotel" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "HotelRoyalBarcelona" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> "Madrid" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> "40.4168,-3.7038" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of class City" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid> <http://www.w3.org/2000/01/rdf-schema#label> "Madrid" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> "43"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> "Parque Barcelona" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> "4.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> "Parque" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of class Attraction" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "ParqueBarcelona" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> "21"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> "Restaurante Delicia Madrid" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice> "16"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> "Mexicana" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of class Restaurant" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "RestauranteDeliciaMadrid" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany> "Trans Valencia" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice> "9.05"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> "Tranvia" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of class Transport" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia> <http://www.w3.org/2000/01/rdf-schema#label> "TranviaValencia" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://es.dbpedia.org/page/Ferrocarrils_de_la_Generalitat_Valenciana" .
+# 
+# http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> "Valencia" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> "39.4699,-0.3763" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance of class City" .
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia> <http://www.w3.org/2000/01/rdf-schema#label> "Valencia" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid20 <http://www.w3.org/2003/11/swrl#body> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid22 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#arguments> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid28 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/2003/11/swrl#head> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid30 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid31 <http://www.w3.org/2003/11/swrl#body> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#arguments> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Taxi" .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#c> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> .
+<http://www.w3.org/2003/11/swrlb#equal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c> .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid39 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://www.w3.org/2003/11/swrl#head> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid41 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid42 <http://www.w3.org/2003/11/swrl#body> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> .
+_:genid44 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n> .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> .
+_:genid46 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2003/11/swrl#arguments> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Congreso" .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#n> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#contains> .
+<http://www.w3.org/2003/11/swrlb#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/2003/11/swrl#head> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> .
+_:genid52 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

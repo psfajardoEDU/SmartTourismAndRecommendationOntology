@@ -1,0 +1,989 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "labels" : {
+      "undefined" : "Smart Tourism and Recommendation Ontology"
+    },
+    "comments" : {
+      "undefined" : "This ontology makes it possible to identify user trends and preferences in relation to tourism in different cities arround the world"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LuxuryHotel",
+      "undefined" : "LuxuryHotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona",
+      "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+      "comment" : {
+        "undefined" : "Instance of class Hotel"
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalBarcelona",
+        "undefined" : "HotelRoyalBarcelona"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Services and facilities with all kinds of luxuries"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://es.dbpedia.org/page/Hotel",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Hotel",
+      "undefined" : "Hotel"
+    },
+    "subClasses" : [ "0", "8", "9" ],
+    "comment" : {
+      "undefined" : "Place to rest"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/SportsEvent",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SportsEvent",
+      "undefined" : "SportsEvent"
+    },
+    "comment" : {
+      "undefined" : "Sport related event"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona",
+      "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://es.dbpedia.org/page/Barcelona",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Instance of class City"
+      },
+      "labels" : {
+        "IRI-based" : "Barcelona",
+        "undefined" : "Barcelona"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid",
+      "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+      "comment" : {
+        "undefined" : "Instance of class City"
+      },
+      "labels" : {
+        "IRI-based" : "Madrid",
+        "undefined" : "Madrid"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia",
+      "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+      "comment" : {
+        "undefined" : "Instance of class City"
+      },
+      "labels" : {
+        "IRI-based" : "Valencia",
+        "undefined" : "Valencia"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Geographical area of tourist interest"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalAttraction",
+      "undefined" : "CulturalAttraction"
+    },
+    "comment" : {
+      "undefined" : "Places of exhibition of works or history"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/AsianRestaurant",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AsianRestaurant",
+      "undefined" : "AsianRestaurant"
+    },
+    "comment" : {
+      "undefined" : "Asian food is served"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BoutiqueHotel",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BoutiqueHotel",
+      "undefined" : "BoutiqueHotel"
+    },
+    "comment" : {
+      "undefined" : "Pleasant and privileged location"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristAsset",
+      "undefined" : "TouristAsset"
+    },
+    "subClasses" : [ "1", "11", "19", "4", "37" ],
+    "comment" : {
+      "undefined" : "Group all tourism assets"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "subClasses" : [ "10", "27", "25", "30" ],
+    "comment" : {
+      "undefined" : "Event marked on the calendar with the objective to entertain"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalEvent",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalEvent",
+      "undefined" : "CulturalEvent"
+    },
+    "comment" : {
+      "undefined" : "Culture related event"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "47",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attraction",
+      "undefined" : "Attraction"
+    },
+    "subClasses" : [ "18", "23", "21" ],
+    "comment" : {
+      "undefined" : "Structures or places that belong to the city and symbolize it"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "11", "19", "4" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RecreationalAttraction",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecreationalAttraction",
+      "undefined" : "RecreationalAttraction"
+    },
+    "comment" : {
+      "undefined" : "Structures belonging to the city"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MusicEvent",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicEvent",
+      "undefined" : "MusicEvent"
+    },
+    "comment" : {
+      "undefined" : "Music related event"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "undefined" : "Restaurant"
+    },
+    "subClasses" : [ "3", "52", "53" ],
+    "comment" : {
+      "undefined" : "Place to eat"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "6" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "6", "17" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "6", "17" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MediterraneanRestaurant",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MediterraneanRestaurant",
+      "undefined" : "MediterraneanRestaurant"
+    },
+    "comment" : {
+      "undefined" : "Mediterranean food is served"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "4", "37" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrivateTransport",
+      "undefined" : "PrivateTransport"
+    },
+    "comment" : {
+      "undefined" : "Private and individual transport"
+    },
+    "attributes" : [ "external" ],
+    "id" : "60",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LatinAmericanRestaurant",
+      "undefined" : "LatinAmericanRestaurant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid",
+      "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+      "comment" : {
+        "undefined" : "Instance of class Restaurant"
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteDeliciaMadrid",
+        "undefined" : "RestauranteDeliciaMadrid"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Latin American food is served"
+    },
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicTransport",
+      "undefined" : "PublicTransport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia",
+      "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://es.dbpedia.org/page/Ferrocarrils_de_la_Generalitat_Valenciana",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Instance of class Transport"
+      },
+      "labels" : {
+        "IRI-based" : "TranviaValencia",
+        "undefined" : "TranviaValencia"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Public and shared transport"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TechEvent",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechEvent",
+      "undefined" : "TechEvent"
+    },
+    "comment" : {
+      "undefined" : "Technology related event"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BudgetHotel",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BudgetHotel",
+      "undefined" : "BudgetHotel"
+    },
+    "comment" : {
+      "undefined" : "Basic services and competitive prices"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "undefined" : "Transport"
+    },
+    "subClasses" : [ "60", "62" ],
+    "comment" : {
+      "undefined" : "Mobility in the city"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NaturalAttraction",
+      "undefined" : "NaturalAttraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona",
+      "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+      "comment" : {
+        "undefined" : "Instance of class Attraction"
+      },
+      "labels" : {
+        "IRI-based" : "ParqueBarcelona",
+        "undefined" : "ParqueBarcelona"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "19" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasType",
+      "undefined" : "hasType"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Indicates the type of the tourist asset"
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasId",
+      "undefined" : "hasId"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Indicates the ID of the city or the tourist asset"
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasDate",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasDate",
+      "undefined" : "hasDate"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Indicates the date of the event"
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "15"
+  }, {
+    "range" : "19",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "19",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "11",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "11",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "11",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "6",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasLocation",
+      "undefined" : "hasLocation"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Indicates the coordinates of the city"
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "34"
+  }, {
+    "range" : "6",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "undefined" : "hasRating"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Indicates the rating of the attraction, event, hotel or restaurant"
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasPrice",
+      "undefined" : "hasPrice"
+    },
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "Indicates the price of the hotel, restaurant or transport"
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "41"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "6",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasCity",
+      "undefined" : "hasCity"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates each tourism asset to a city"
+    },
+    "attributes" : [ "external", "functional", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasStars",
+      "undefined" : "hasStars"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates the stars of the hotel"
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasCompany",
+      "undefined" : "hasCompany"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "Indicates the transport company"
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "54",
+    "comment" : {
+      "undefined" : "Indicates the name of the city or the tourist asset"
+    },
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isClosedTo",
+      "undefined" : "isClosedTo"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Tourist assets that are close to others"
+    },
+    "attributes" : [ "symmetric", "external", "someValues", "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo",
+    "baseIri" : "http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "isClosedTo",
+      "undefined" : "isClosedTo"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Tourist assets that are close to others"
+    },
+    "attributes" : [ "symmetric", "external", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "4",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "4",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "37",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "37",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  } ]
+}

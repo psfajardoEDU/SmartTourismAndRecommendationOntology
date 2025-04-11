@@ -1,0 +1,528 @@
+@prefix : <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology#> .
+
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology> rdf:type owl:Ontology ;
+                                                                                            rdfs:comment "This ontology makes it possible to identify user trends and preferences in relation to tourism in different cities arround the world" ;
+                                                                                            rdfs:label "Smart Tourism and Recommendation Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> rdf:type owl:ObjectProperty ,
+                                                                                                            owl:FunctionalProperty ;
+                                                                                                   rdfs:domain <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> ;
+                                                                                                   rdfs:range [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> ;
+                                                                                                                owl:allValuesFrom <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City>
+                                                                                                              ] ;
+                                                                                                   rdfs:comment "Relates each tourism asset to a city" ;
+                                                                                                   rdfs:label "hasCity" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> rdf:type owl:ObjectProperty ,
+                                                                                                               owl:SymmetricProperty ;
+                                                                                                      rdfs:domain <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> ;
+                                                                                                      rdfs:range [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset>
+                                                                                                                 ] ;
+                                                                                                      rdfs:comment "Tourist assets that are close to others" ;
+                                                                                                      rdfs:label "isClosedTo" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany> rdf:type owl:DatatypeProperty ,
+                                                                                                               owl:FunctionalProperty ;
+                                                                                                      rdfs:domain <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> ;
+                                                                                                      rdfs:range xsd:string ;
+                                                                                                      rdfs:comment "Indicates the transport company" ;
+                                                                                                      rdfs:label "hasCompany" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasDate
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasDate> rdf:type owl:DatatypeProperty ,
+                                                                                                            owl:FunctionalProperty ;
+                                                                                                   rdfs:domain <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> ;
+                                                                                                   rdfs:range xsd:dateTime ;
+                                                                                                   rdfs:comment "Indicates the date of the event" ;
+                                                                                                   rdfs:label "hasDate" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> rdf:type owl:DatatypeProperty ,
+                                                                                                          owl:FunctionalProperty ;
+                                                                                                 rdfs:domain [ rdf:type owl:Class ;
+                                                                                                               owl:unionOf ( <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City>
+                                                                                                                             <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset>
+                                                                                                                           )
+                                                                                                             ] ;
+                                                                                                 rdfs:range xsd:int ;
+                                                                                                 rdfs:comment "Indicates the ID of the city or the tourist asset" ;
+                                                                                                 rdfs:label "hasId" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> rdf:type owl:DatatypeProperty ,
+                                                                                                                owl:FunctionalProperty ;
+                                                                                                       rdfs:domain <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> ;
+                                                                                                       rdfs:range xsd:string ;
+                                                                                                       rdfs:comment "Indicates the coordinates of the city" ;
+                                                                                                       rdfs:label "hasLocation" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> rdf:type owl:DatatypeProperty ,
+                                                                                                            owl:FunctionalProperty ;
+                                                                                                   rdfs:domain [ rdf:type owl:Class ;
+                                                                                                                 owl:unionOf ( <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City>
+                                                                                                                               <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset>
+                                                                                                                             )
+                                                                                                               ] ;
+                                                                                                   rdfs:range xsd:string ;
+                                                                                                   rdfs:comment "Indicates the name of the city or the tourist asset" ;
+                                                                                                   rdfs:label "hasName" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice> rdf:type owl:DatatypeProperty ,
+                                                                                                             owl:FunctionalProperty ;
+                                                                                                    rdfs:domain [ rdf:type owl:Class ;
+                                                                                                                  owl:unionOf ( <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel>
+                                                                                                                                <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant>
+                                                                                                                                <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport>
+                                                                                                                              )
+                                                                                                                ] ;
+                                                                                                    rdfs:range xsd:int ;
+                                                                                                    rdfs:comment "Indicates the price of the hotel, restaurant or transport" ;
+                                                                                                    rdfs:label "hasPrice" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> rdf:type owl:DatatypeProperty ,
+                                                                                                              owl:FunctionalProperty ;
+                                                                                                     rdfs:domain [ rdf:type owl:Class ;
+                                                                                                                   owl:unionOf ( <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction>
+                                                                                                                                 <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event>
+                                                                                                                                 <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel>
+                                                                                                                                 <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant>
+                                                                                                                               )
+                                                                                                                 ] ;
+                                                                                                     rdfs:range xsd:decimal ;
+                                                                                                     rdfs:comment "Indicates the rating of the attraction, event, hotel or restaurant" ;
+                                                                                                     rdfs:label "hasRating" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars> rdf:type owl:DatatypeProperty ,
+                                                                                                             owl:FunctionalProperty ;
+                                                                                                    rdfs:domain <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> ;
+                                                                                                    rdfs:range xsd:int ;
+                                                                                                    rdfs:comment "Indicates the stars of the hotel" ;
+                                                                                                    rdfs:label "hasStars" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> rdf:type owl:DatatypeProperty ,
+                                                                                                            owl:FunctionalProperty ;
+                                                                                                   rdfs:domain <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> ;
+                                                                                                   rdfs:range xsd:string ;
+                                                                                                   rdfs:comment "Indicates the type of the tourist asset" ;
+                                                                                                   rdfs:label "hasType" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/AsianRestaurant
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/AsianRestaurant> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> ;
+                                                                                                           rdfs:comment "Asian food is served" ;
+                                                                                                           rdfs:label "AsianRestaurant" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> ;
+                                                                                                      rdfs:comment "Structures or places that belong to the city and symbolize it" ;
+                                                                                                      rdfs:label "Attraction" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BoutiqueHotel
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BoutiqueHotel> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> ;
+                                                                                                         rdfs:comment "Pleasant and privileged location" ;
+                                                                                                         rdfs:label "BoutiqueHotel" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BudgetHotel
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/BudgetHotel> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> ;
+                                                                                                       rdfs:comment "Basic services and competitive prices" ;
+                                                                                                       rdfs:label "BudgetHotel" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> rdf:type owl:Class ;
+                                                                                                rdfs:comment "Geographical area of tourist interest" ;
+                                                                                                rdfs:label "City" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction> rdf:type owl:Class ;
+                                                                                                              rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> ;
+                                                                                                              rdfs:comment "Places of exhibition of works or history" ;
+                                                                                                              rdfs:label "CulturalAttraction" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalEvent
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalEvent> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> ;
+                                                                                                         rdfs:comment "Culture related event" ;
+                                                                                                         rdfs:label "CulturalEvent" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> ;
+                                                                                                 rdfs:comment "Event marked on the calendar with the objective to entertain" ;
+                                                                                                 rdfs:label "Event" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> ;
+                                                                                                 rdfs:comment "Place to rest" ;
+                                                                                                 rdfs:label "Hotel" ;
+                                                                                                 rdfs:seeAlso "https://es.dbpedia.org/page/Hotel" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> ;
+                                                                                                                   rdfs:comment "Latin American food is served" ;
+                                                                                                                   rdfs:label "LatinAmericanRestaurant" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> ;
+                                                                                                       rdfs:comment "Services and facilities with all kinds of luxuries" ;
+                                                                                                       rdfs:label "LuxuryHotel" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MediterraneanRestaurant
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MediterraneanRestaurant> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> ;
+                                                                                                                   rdfs:comment "Mediterranean food is served" ;
+                                                                                                                   rdfs:label "MediterraneanRestaurant" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MusicEvent
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/MusicEvent> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> ;
+                                                                                                      rdfs:comment "Music related event" ;
+                                                                                                      rdfs:label "MusicEvent" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction> rdf:type owl:Class ;
+                                                                                                             rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> ;
+                                                                                                             rdfs:label "NaturalAttraction" ,
+                                                                                                                        "Places found in nature" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> ;
+                                                                                                            rdfs:comment "Private and individual transport" ;
+                                                                                                            rdfs:label "PrivateTransport" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> ;
+                                                                                                           rdfs:comment "Public and shared transport" ;
+                                                                                                           rdfs:label "PublicTransport" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RecreationalAttraction
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RecreationalAttraction> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Attraction> ;
+                                                                                                                  rdfs:comment "Structures belonging to the city" ;
+                                                                                                                  rdfs:label "RecreationalAttraction" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Restaurant> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> ;
+                                                                                                      rdfs:comment "Place to eat" ;
+                                                                                                      rdfs:label "Restaurant" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/SportsEvent
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/SportsEvent> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> ;
+                                                                                                       rdfs:comment "Sport related event" ;
+                                                                                                       rdfs:label "SportsEvent" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TechEvent
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TechEvent> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> ;
+                                                                                                     rdfs:comment "Technology related event" ;
+                                                                                                     rdfs:label "TechEvent" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> rdf:type owl:Class ;
+                                                                                                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> ;
+                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset>
+                                                                                                                            ] ,
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> ;
+                                                                                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                              owl:onClass <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City>
+                                                                                                                            ] ;
+                                                                                                        rdfs:comment "Group all tourism assets" ;
+                                                                                                        rdfs:label "TouristAsset" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TouristAsset> ;
+                                                                                                     rdfs:comment "Mobility in the city" ;
+                                                                                                     rdfs:label "Transport" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> rdf:type owl:NamedIndividual ,
+                                                                                                              <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> ;
+                                                                                                     <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> "Barcelona" ;
+                                                                                                     <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> "42.3874,2.1686" ;
+                                                                                                     rdfs:comment "Instance of class City" ;
+                                                                                                     rdfs:label "Barcelona" ;
+                                                                                                     rdfs:seeAlso "https://es.dbpedia.org/page/Barcelona" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> rdf:type owl:NamedIndividual ,
+                                                                                                                        <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel> ;
+                                                                                                               <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> ;
+                                                                                                               <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> ;
+                                                                                                               <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> 9 ;
+                                                                                                               <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> "Hotel Royal Barcelona" ;
+                                                                                                               <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> 4.0 ;
+                                                                                                               <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars> 4.252 ;
+                                                                                                               <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> "Playa" ;
+                                                                                                               rdfs:comment "Instance of class Hotel" ;
+                                                                                                               rdfs:label "HotelRoyalBarcelona" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid> rdf:type owl:NamedIndividual ,
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> ;
+                                                                                                  <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> "Madrid" ;
+                                                                                                  <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> "40.4168,-3.7038" ;
+                                                                                                  rdfs:comment "Instance of class City" ;
+                                                                                                  rdfs:label "Madrid" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/ParqueBarcelona> rdf:type owl:NamedIndividual ,
+                                                                                                                    <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/NaturalAttraction> ;
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Barcelona> ;
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/isClosedTo> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/HotelRoyalBarcelona> ;
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> 43 ;
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> "Parque Barcelona" ;
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> 4.9 ;
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> "Parque" ;
+                                                                                                           rdfs:comment "Instance of class Attraction" ;
+                                                                                                           rdfs:label "ParqueBarcelona" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/RestauranteDeliciaMadrid> rdf:type owl:NamedIndividual ,
+                                                                                                                             <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LatinAmericanRestaurant> ;
+                                                                                                                    <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Madrid> ;
+                                                                                                                    <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> 21 ;
+                                                                                                                    <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> "Restaurante Delicia Madrid" ;
+                                                                                                                    <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice> 16 ;
+                                                                                                                    <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasRating> 4.7 ;
+                                                                                                                    <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> "Mexicana" ;
+                                                                                                                    rdfs:comment "Instance of class Restaurant" ;
+                                                                                                                    rdfs:label "RestauranteDeliciaMadrid" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/TranviaValencia> rdf:type owl:NamedIndividual ,
+                                                                                                                    <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PublicTransport> ;
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCity> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia> ;
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasCompany> "Trans Valencia" ;
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> 11 ;
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasPrice> 9.05 ;
+                                                                                                           <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> "Tranvia" ;
+                                                                                                           rdfs:comment "Instance of class Transport" ;
+                                                                                                           rdfs:label "TranviaValencia" ;
+                                                                                                           rdfs:seeAlso "https://es.dbpedia.org/page/Ferrocarrils_de_la_Generalitat_Valenciana" .
+
+
+###  http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia
+<http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Valencia> rdf:type owl:NamedIndividual ,
+                                                                                                             <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/City> ;
+                                                                                                    <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasId> "Valencia" ;
+                                                                                                    <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasLocation> "39.4699,-0.3763" ;
+                                                                                                    rdfs:comment "Instance of class City" ;
+                                                                                                    rdfs:label "Valencia" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#h> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#t> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#n> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#e> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Hotel> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#s> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 4 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasStars> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/LuxuryHotel> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasType> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Transport> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#c> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first "Taxi" ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/PrivateTransport> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#contains> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <urn:swrl:var#n> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first "Congreso" ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/hasName> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/Event> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/pedro/ontologies/2025/3/SmartTourismAndRecommendationOntology/CulturalAttraction> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
